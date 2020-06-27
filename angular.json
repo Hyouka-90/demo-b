@@ -21,12 +21,28 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/dist/img"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/plugins/fontawesome-free/css/all.min.css",
+              "src/plugins/overlayScrollbars/css/OverlayScrollbars.min.css",
+              "src/dist/css/adminlte.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/plugins/jquery/jquery.min.js",
+              "src/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "src/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
+              "src/dist/js/adminlte.js",
+              "src/dist/js/demo.js",
+              "src/plugins/jquery-mousewheel/jquery.mousewheel.js",
+              "src/plugins/raphael/raphael.min.js",
+              "src/plugins/jquery-mapael/jquery.mapael.min.js",
+              "src/plugins/jquery-mapael/maps/usa_states.min.js",
+              "src/plugins/chart.js/Chart.min.js",
+              "src/dist/js/pages/dashboard2.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +135,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-b"
+    }
+  },
+  "defaultProject": "demo-b",
+  "cli": {
+    "analytics": false
+  }
 }
