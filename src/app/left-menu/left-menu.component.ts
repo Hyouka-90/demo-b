@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Routes, Router} from '@angular/router';
 
 @Component({
   selector: 'app-left-menu',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router ) { }
 
   ngOnInit(): void {
+  }
+
+  dashboard() {
+    this.router.navigate(['']);
+  }
+
+  product(){
+    this.router.navigate(['product']);
+
   }
 
 }
